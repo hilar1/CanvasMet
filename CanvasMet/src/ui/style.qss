@@ -1,0 +1,34 @@
+/* 1. 胶囊形底座样式 */
+QFrame#FloatingBar {
+    background-color: rgba(40, 44, 52, 220); 
+    border-radius: 23px;                     /* 整体大圆角 */
+    border: 1px solid rgba(255, 255, 255, 40);
+}
+
+/* 2. 内部透明按钮样式 */
+QPushButton#FloatingBtn {
+    background-color: transparent;           /* 按钮默认透明，融入底座 */
+    color: white;
+    border-radius: 18px;                     /* 按钮悬停时的圆角 */
+    font-weight: bold;
+    font-size: 22px;                         /* 增大箭头符号 */
+    min-width: 36px;
+    max-width: 36px;
+    min-height: 36px;
+    max-height: 36px;
+    border: none;
+}
+
+/* 交互状态：悬停与点击 */
+QPushButton#FloatingBtn:hover {
+    background-color: rgba(255, 255, 255, 40); /* 悬停时微微泛白 */
+}
+QPushButton#FloatingBtn:pressed {
+    background-color: rgba(0, 0, 0, 80);       /* 按下时变暗 */
+}
+
+/* 禁用状态（无历史记录时） */
+QPushButton#FloatingBtn:disabled {
+    color: rgba(255, 255, 255, 60);
+    background-color: transparent;
+}
