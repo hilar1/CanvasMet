@@ -1,4 +1,4 @@
-# 金相智能分析系统 (AiMetallographic) v1.1
+# 金相智能分析系统 (CanvasMet) v1.1
 
 AiMetallographic 是一款面向材料科学领域的端到端金相图像智能分析平台。系统基于 PySide6 构建了现代化 Canvas-First 桌面端图形界面，底层深度集成 Cellpose 实例分割算法，实现了金相显微图像的自动化晶粒识别、人工交互修正、ASTM E112 物理指标计算以及闭环的模型微调训练（数据飞轮）。
 
